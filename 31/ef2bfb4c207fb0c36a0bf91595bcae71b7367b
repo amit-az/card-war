@@ -1,0 +1,14 @@
+values-prod.yaml
+  h_42afcfbe400221 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "31ef2bfb4c207fb0c36a0bf91595bcae71b7367b",
+  "prompts": {},
+  "humans": {
+    "h_42afcfbe400221": {
+      "author": "Amit Azulay <amitaz@papayaglobal.com>"
+    }
+  }
+}
