@@ -1,0 +1,42 @@
+Chart.yaml
+  h_42afcfbe400221 1-6
+templates/backend/configmap.yaml
+  h_42afcfbe400221 1-14
+templates/backend/deployment.yaml
+  h_42afcfbe400221 1-71
+templates/backend/service.yaml
+  h_42afcfbe400221 1-14
+templates/database/configmap.yaml
+  h_42afcfbe400221 1-9
+templates/database/deployment.yaml
+  h_42afcfbe400221 1-75
+templates/database/pvc.yaml
+  h_42afcfbe400221 1-13
+templates/database/service.yaml
+  h_42afcfbe400221 1-14
+templates/frontend/configmap.yaml
+  h_42afcfbe400221 1-14
+templates/frontend/deployment.yaml
+  h_42afcfbe400221 1-50
+templates/frontend/service.yaml
+  h_42afcfbe400221 1-14
+templates/reviewer-rbac.yaml
+  h_42afcfbe400221 1-38
+templates/serviceaccounts.yaml
+  h_42afcfbe400221 1-8
+values-prod.yaml
+  h_42afcfbe400221 1-10
+values.yaml
+  h_42afcfbe400221 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3eff6e0e6a979f65fcb79ce3d58d3344093b8413",
+  "prompts": {},
+  "humans": {
+    "h_42afcfbe400221": {
+      "author": "Amit Azulay <amitaz@papayaglobal.com>"
+    }
+  }
+}
