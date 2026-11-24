@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: backend
+data:
+  db_host: database
+  deck.json: |
+    {
+      "ranks": {{ .Values.deck.ranks | toJson }},
+      "suits": {{ .Values.deck.suits | toJson }}
+    }

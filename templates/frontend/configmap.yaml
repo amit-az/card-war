@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: frontend
+data:
+  backend_url: http://backend:8080
+{{- range .Values.frontend.themes }}
+{{- if eq (int .id) (int $.Values.frontend.theme) }}
+  theme: {{ .name | quote }}
+{{- end }}
+{{- end }}

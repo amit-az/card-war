@@ -1,0 +1,27 @@
+secretName: db-credentials
+serviceAccounts: [frontend, backend, database]
+reviewer: { enabled: true }
+
+database:
+  name: cardwar
+  storage: 1Gi
+  image: { repository: postgres, tag: "16" }
+backend:
+  replicaCount: 2
+  image: { repository: cardwar-backend, tag: v1 }
+  resources:
+    requests: { cpu: 10m, memory: 32Mi }
+    limits:   { cpu: 200m, memory: 128Mi }
+frontend:
+  replicaCount: 2
+  image: { repository: cardwar-frontend, tag: v3 }
+  theme: 2
+  themes:
+    - { id: 1, name: light }
+    - { id: 2, name: dark }
+  resources:
+    requests: { cpu: 10m, memory: 32Mi }
+    limits:   { cpu: 200m, memory: 128Mi }
+deck:
+  ranks: ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
+  suits: ["♠","♥","♦","♣"]

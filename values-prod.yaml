@@ -1,0 +1,10 @@
+backend:
+  replicaCount: 4
+  resources:
+    limits: { cpu: 500m, memory: 256Mi }
+frontend:
+  replicaCount: 3
+database:
+  storage: 5Gi
+reviewer:
+  enabled: false
